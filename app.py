@@ -10,7 +10,7 @@ import streamlit as st
 # CONFIGURATION
 # ============================================================
 
-BACKEND_BASE_URL = "http://127.0.0.1:8000"
+BACKEND_BASE_URL = "https://machine-learning-automation.onrender.com"
 
 START_URL = f"{BACKEND_BASE_URL}/train/start"
 STATUS_URL = f"{BACKEND_BASE_URL}/train/status"
