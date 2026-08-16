@@ -1,0 +1,164 @@
+{
+    "task": "classification",
+    "learning_type": "supervised",
+    "target_column": "target",
+    "best_model": "SVM",
+    "best_hyperparameters": {
+        "C": 1,
+        "gamma": "scale",
+        "kernel": "rbf"
+    },
+    "best_model_scores": {
+        "accuracy": 94.0,
+        "balanced_accuracy": 93.6,
+        "precision": 94.0,
+        "recall": 94.0,
+        "f1_score": 93.99,
+        "roc_auc": 98.56
+    },
+    "feature_columns": [
+        "feature_1",
+        "feature_2",
+        "feature_3",
+        "feature_4",
+        "feature_5",
+        "feature_6",
+        "feature_7",
+        "feature_8",
+        "feature_9",
+        "feature_10",
+        "feature_11",
+        "feature_12",
+        "feature_13",
+        "feature_14",
+        "feature_15",
+        "feature_16",
+        "feature_17",
+        "feature_18",
+        "feature_19",
+        "feature_20"
+    ],
+    "validation": {
+        "task": "supervised",
+        "target_column": "target",
+        "n_train_rows": 1600,
+        "n_test_rows": 400,
+        "n_features": 20,
+        "n_target_values": 2
+    },
+    "all_models": [
+        {
+            "Model": "SVM",
+            "Accuracy": 94.0,
+            "Precision": 94.0,
+            "Recall": 94.0,
+            "F1 Score": 93.99,
+            "ROC-AUC": 98.56,
+            "CV Accuracy": 94.75,
+            "Best Hyperparameters": {
+                "C": 1,
+                "gamma": "scale",
+                "kernel": "rbf"
+            }
+        },
+        {
+            "Model": "CatBoost",
+            "Accuracy": 93.75,
+            "Precision": 93.79,
+            "Recall": 93.75,
+            "F1 Score": 93.72,
+            "ROC-AUC": 98.24,
+            "CV Accuracy": 94.75,
+            "Best Hyperparameters": {
+                "depth": 6,
+                "iterations": 200,
+                "learning_rate": 0.1
+            }
+        },
+        {
+            "Model": "LightGBM",
+            "Accuracy": 93.25,
+            "Precision": 93.26,
+            "Recall": 93.25,
+            "F1 Score": 93.23,
+            "ROC-AUC": 98.15,
+            "CV Accuracy": 93.81,
+            "Best Hyperparameters": {
+                "learning_rate": 0.1,
+                "max_depth": -1,
+                "n_estimators": 200,
+                "num_leaves": 63
+            }
+        },
+        {
+            "Model": "XGBoost",
+            "Accuracy": 94.0,
+            "Precision": 94.1,
+            "Recall": 94.0,
+            "F1 Score": 93.96,
+            "ROC-AUC": 98.17,
+            "CV Accuracy": 93.44,
+            "Best Hyperparameters": {
+                "learning_rate": 0.1,
+                "max_depth": 5,
+                "n_estimators": 200,
+                "subsample": 0.8
+            }
+        },
+        {
+            "Model": "KNN",
+            "Accuracy": 92.5,
+            "Precision": 92.81,
+            "Recall": 92.5,
+            "F1 Score": 92.41,
+            "ROC-AUC": 97.03,
+            "CV Accuracy": 93.19,
+            "Best Hyperparameters": {
+                "metric": "euclidean",
+                "n_neighbors": 5,
+                "weights": "uniform"
+            }
+        },
+        {
+            "Model": "Random Forest",
+            "Accuracy": 92.25,
+            "Precision": 92.3,
+            "Recall": 92.25,
+            "F1 Score": 92.2,
+            "ROC-AUC": 97.52,
+            "CV Accuracy": 92.19,
+            "Best Hyperparameters": {
+                "max_depth": 10,
+                "min_samples_split": 2,
+                "n_estimators": 200
+            }
+        },
+        {
+            "Model": "Logistic Regression",
+            "Accuracy": 85.75,
+            "Precision": 85.79,
+            "Recall": 85.75,
+            "F1 Score": 85.6,
+            "ROC-AUC": 93.34,
+            "CV Accuracy": 85.56,
+            "Best Hyperparameters": {
+                "C": 1,
+                "solver": "lbfgs"
+            }
+        },
+        {
+            "Model": "Decision Tree",
+            "Accuracy": 85.25,
+            "Precision": 85.2,
+            "Recall": 85.25,
+            "F1 Score": 85.2,
+            "ROC-AUC": 90.71,
+            "CV Accuracy": 82.63,
+            "Best Hyperparameters": {
+                "max_depth": 5,
+                "min_samples_leaf": 1,
+                "min_samples_split": 2
+            }
+        }
+    ]
+}

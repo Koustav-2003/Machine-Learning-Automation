@@ -1,0 +1,156 @@
+{
+    "task": "regression",
+    "learning_type": "supervised",
+    "target_column": "target",
+    "best_model": "Multiple Linear Regression",
+    "best_hyperparameters": {
+        "fit_intercept": false,
+        "positive": true
+    },
+    "best_model_scores": {
+        "r2_score": 99.74,
+        "mae": 8.0386,
+        "rmse": 10.0504
+    },
+    "feature_columns": [
+        "feature_1",
+        "feature_2",
+        "feature_3",
+        "feature_4",
+        "feature_5",
+        "feature_6",
+        "feature_7",
+        "feature_8",
+        "feature_9",
+        "feature_10",
+        "feature_11",
+        "feature_12",
+        "feature_13",
+        "feature_14",
+        "feature_15",
+        "feature_16",
+        "feature_17",
+        "feature_18",
+        "feature_19",
+        "feature_20"
+    ],
+    "validation": {
+        "task": "supervised",
+        "target_column": "target",
+        "n_train_rows": 1600,
+        "n_test_rows": 400,
+        "n_features": 20,
+        "n_target_values": 1600
+    },
+    "all_models": [
+        {
+            "Model": "Multiple Linear Regression",
+            "R2 Score": 99.74,
+            "MAE": 8.038633341997693,
+            "RMSE": 10.050383971911018,
+            "CV R2": 99.77,
+            "Best Hyperparameters": {
+                "fit_intercept": false,
+                "positive": true
+            }
+        },
+        {
+            "Model": "SVR",
+            "R2 Score": 99.74,
+            "MAE": 8.016594385237212,
+            "RMSE": 10.033261759743993,
+            "CV R2": 99.77,
+            "Best Hyperparameters": {
+                "C": 100,
+                "coef0": 0.0,
+                "degree": 2,
+                "epsilon": 0.2,
+                "gamma": "scale",
+                "kernel": "linear"
+            }
+        },
+        {
+            "Model": "Polynomial Regression",
+            "R2 Score": 99.7,
+            "MAE": 8.690978018765984,
+            "RMSE": 10.785567790593463,
+            "CV R2": 99.73,
+            "Best Hyperparameters": {
+                "linear__fit_intercept": false,
+                "poly__degree": 2
+            }
+        },
+        {
+            "Model": "CatBoost Regression",
+            "R2 Score": 96.58,
+            "MAE": 27.906677772069813,
+            "RMSE": 36.44794635494836,
+            "CV R2": 96.38,
+            "Best Hyperparameters": {
+                "depth": 4,
+                "iterations": 200,
+                "learning_rate": 0.1
+            }
+        },
+        {
+            "Model": "XGBoost Regression",
+            "R2 Score": 92.73,
+            "MAE": 40.52067643203896,
+            "RMSE": 53.15330602753525,
+            "CV R2": 91.76,
+            "Best Hyperparameters": {
+                "learning_rate": 0.1,
+                "max_depth": 3,
+                "n_estimators": 200,
+                "subsample": 0.8
+            }
+        },
+        {
+            "Model": "LightGBM Regression",
+            "R2 Score": 91.97,
+            "MAE": 42.399977354182944,
+            "RMSE": 55.83660217091581,
+            "CV R2": 90.38,
+            "Best Hyperparameters": {
+                "learning_rate": 0.1,
+                "max_depth": -1,
+                "n_estimators": 200,
+                "num_leaves": 15
+            }
+        },
+        {
+            "Model": "Random Forest Regression",
+            "R2 Score": 72.74,
+            "MAE": 81.37181264778121,
+            "RMSE": 102.90458885673226,
+            "CV R2": 71.03,
+            "Best Hyperparameters": {
+                "max_depth": null,
+                "min_samples_split": 2,
+                "n_estimators": 200
+            }
+        },
+        {
+            "Model": "Decision Tree Regression",
+            "R2 Score": 36.3,
+            "MAE": 127.14879687471198,
+            "RMSE": 157.3052637037634,
+            "CV R2": 32.08,
+            "Best Hyperparameters": {
+                "max_depth": 5,
+                "min_samples_leaf": 4,
+                "min_samples_split": 2
+            }
+        },
+        {
+            "Model": "Simple Linear Regression",
+            "R2 Score": 2.7,
+            "MAE": 155.6448650790731,
+            "RMSE": 194.4129354146141,
+            "CV R2": 4.93,
+            "Best Hyperparameters": {
+                "fit_intercept": false
+            }
+        }
+    ]
+}

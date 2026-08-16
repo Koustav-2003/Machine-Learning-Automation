@@ -1,0 +1,58 @@
+{
+    "task": "clustering",
+    "learning_type": "unsupervised",
+    "target_column": null,
+    "best_model": "K-Means",
+    "best_k": 5,
+    "best_model_scores": {
+        "silhouette_score": 52.72,
+        "davies_bouldin_score": null,
+        "calinski_harabasz_score": null
+    },
+    "feature_columns": [
+        "feature_1",
+        "feature_2",
+        "feature_3",
+        "feature_4",
+        "feature_5",
+        "feature_6",
+        "feature_7",
+        "feature_8",
+        "feature_9",
+        "feature_10",
+        "feature_11",
+        "feature_12",
+        "feature_13",
+        "feature_14",
+        "feature_15",
+        "feature_16",
+        "feature_17",
+        "feature_18",
+        "feature_19",
+        "feature_20",
+        "feature_21"
+    ],
+    "validation": {
+        "task": "unsupervised",
+        "n_train_rows": 1600,
+        "n_test_rows": 400,
+        "n_features": 21
+    },
+    "all_models": [
+        {
+            "Model": "K-Means",
+            "Train Silhouette Score": 53.38,
+            "Test Silhouette Score": 52.72
+        },
+        {
+            "Model": "Hierarchical (Agglomerative)",
+            "Train Silhouette Score": 53.38,
+            "Test Silhouette Score": null
+        },
+        {
+            "Model": "Bisecting K-Means (Divisive)",
+            "Train Silhouette Score": 53.38,
+            "Test Silhouette Score": 52.72
+        }
+    ]
+}
