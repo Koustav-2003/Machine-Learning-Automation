@@ -8,7 +8,7 @@ An automated machine learning application for **Regression, Classification, and 
 [https://machine-learning-automation.streamlit.app/](https://machine-learning-automation.streamlit.app/)
 
 **Deployed Backend (FastAPI):**  
-[https://machine-learning-automation.onrender.com](https://machine-learning-automation.onrender.com)
+[https://machine-learning-automation.onrender.com](https://dashboard.render.com/web/srv-da0jlte7bikc73fa2830)
 
 ## 📓 Try the Notebook Versions
 
